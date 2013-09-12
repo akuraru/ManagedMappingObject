@@ -18,7 +18,7 @@
     return nil;
 }
 
-+ (instancetype)insertWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context {
++ (instancetype)insertNewWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context {
     return [[self alloc] initWithDictionary:dictionary managedObjectContext:context];
 }
 
@@ -27,11 +27,23 @@
     if (managedObject == nil) {
         return nil;
     }
+    [self updateManagedObject:managedObject dictionary:dictionary];
+    return managedObject;
+}
+
+- (void)updateWithDictionary:(NSDictionary *) dictionary {
+    [self updateManagedObject:self dictionary:dictionary];
+}
+
+- (void)updateManagedObject:(id) managedObject dictionary:(NSDictionary *) dictionary {
     NSDictionary *keyMap = [[self class] JSONKeyMap];
     NSDictionary *valueTransformerNames = [[self class] JSONValueTransformerNames];
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
         id dictionaryValue = dictionary[dictionaryKey];
+        if (dictionaryValue == nil) {
+            continue;
+        }
         NSString *transformerName = valueTransformerNames[objectKey];
         if (transformerName) {
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];
@@ -39,7 +51,6 @@
         }
         [managedObject setValue:dictionaryValue forKey:objectKey];
     }
-    return managedObject;
 }
 
 - (NSDictionary *)dictionaryRepresentation {
@@ -49,6 +60,9 @@
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
         id dictionaryValue = [self valueForKey:objectKey];
+        if (dictionaryValue == nil) {
+            continue;
+        }
         NSString *transformerName = valueTransformerNames[objectKey];
         if (transformerName) {
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];

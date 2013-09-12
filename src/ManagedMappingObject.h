@@ -14,7 +14,9 @@
 
 @interface ManagedMappingObject : NSManagedObject
 
-+ (instancetype)insertWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context;
++ (instancetype)insertNewWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context;
+
+- (void)updateWithDictionary:(NSDictionary *) dictionary;
 
 - (NSDictionary *)dictionaryRepresentation;
 @end
