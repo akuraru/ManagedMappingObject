@@ -1,7 +1,8 @@
 # ManagedMappingObject
 
-``NSManagedObject`` <-> NSDictionary(e.g JSON Model class)
+``NSManagedObject`` <-> ``NSDictionary`` (e.g JSON Model class)
 
+Converting NSManagedObject to NSDictionary (and back again).
 
 ## Usage
 
