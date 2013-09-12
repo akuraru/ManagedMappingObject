@@ -15,7 +15,6 @@
         [MeterToCentimeterTransformer class])];
     [NSValueTransformer setValueTransformer:[[UnixTimeToNSDateTransformer alloc] init] forName:NSStringFromClass(
         [UnixTimeToNSDateTransformer class])];
-
 }
 
 @end

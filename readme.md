@@ -4,6 +4,11 @@
 
 Converting NSManagedObject to NSDictionary (and back again).
 
+## Installation
+
+```ruby
+```
+
 ## Usage
 
 1 Setup NSManagedObject class.

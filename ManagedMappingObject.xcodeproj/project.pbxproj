@@ -45,6 +45,7 @@
 		17B5CDDA6887B049A384213F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */; };
 		17B5CE9D8C03D8808DCAD065 /* _Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CBA082B8FC5E2191417A /* _Unit.m */; };
 		17B5CEE68C36767EC5D72FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FFB19EB31FB8FEC1CE /* main.m */; };
+		73741C7917E164D600E42069 /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -320,8 +321,6 @@
 			mainGroup = 17B5CF01BB4619E93128F426;
 			productRefGroup = 17B5C52774E89581F6DE7044 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */,
@@ -434,6 +433,7 @@
 				17B5C15C00BE8DC4C23ABC39 /* _Unit.m in Sources */,
 				17B5C387A4F045E58FF5028A /* UnitJSONModel.m in Sources */,
 				17B5C2B7C4F8F4FDFEE02604 /* UnitTransformer.m in Sources */,
+				73741C7917E164D600E42069 /* ManagedMappingObject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +593,7 @@
 				17B5C0B556A1A7DF36CD52FA /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B5CAB567B1B90CB64B99E2 /* Build configuration list for PBXNativeTarget "ManagedMappingObject" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +602,7 @@
 				17B5C89E0342DEAF4C3E6ECA /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B5CEA9968053386EE1A605 /* Build configuration list for PBXProject "ManagedMappingObject" */ = {
 			isa = XCConfigurationList;
