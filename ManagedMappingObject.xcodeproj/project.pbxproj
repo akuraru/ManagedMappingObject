@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FCAF38A96DC43F98DC0E3A8 /* libPods-ManagedMappingObjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */; };
+		17B5C019583AA50DC8CA8EF9 /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CAA99267E6050AB375F9 /* _Person.m */; };
+		17B5C0D5A67D51921E37E0E9 /* ManagedMappingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */; };
+		17B5C1014D8426E19A14C556 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7281B0F03ACFA28B245 /* Default@2x.png */; };
+		17B5C11B293920DE6620D535 /* UnitJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9C2E14348748199759F /* UnitJSONModel.m */; };
+		17B5C15C00BE8DC4C23ABC39 /* _Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CBA082B8FC5E2191417A /* _Unit.m */; };
+		17B5C1A286D17EA0BFF4D237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CC9F54AE645418C285E6 /* InfoPlist.strings */; };
+		17B5C1C1C36F594E21D10381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */; };
+		17B5C1FAD3AD05E8F8ED0345 /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CAA99267E6050AB375F9 /* _Person.m */; };
+		17B5C21F1AD0BB4D255F42CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CA55B7F1590E284FE83E /* Default-568h@2x.png */; };
+		17B5C2242847828CDF5E4AE7 /* unit.json in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7521DCB05F03305B805 /* unit.json */; };
+		17B5C22AFD98BBF6D1FBEB6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7DB94FD45FABCA2E10B /* AppDelegate.m */; };
+		17B5C2B7C4F8F4FDFEE02604 /* UnitTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD700B07489A261B4636 /* UnitTransformer.m */; };
+		17B5C317E65E0DFA116E4572 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7D1DD8F867320A4A805 /* Unit.m */; };
+		17B5C387A4F045E58FF5028A /* UnitJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9C2E14348748199759F /* UnitJSONModel.m */; };
+		17B5C3DA3791FEFFFECEF758 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C3151F13FD1674009844 /* person.json */; };
+		17B5C47522034B8676954E16 /* PersonJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CAFC24F298148ED4B9BC /* PersonJSONModel.m */; };
+		17B5C4E479C6B321016FD81F /* PersonJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CAFC24F298148ED4B9BC /* PersonJSONModel.m */; };
+		17B5C5ABD799F638AE820139 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C805EEE1E99C9004B436 /* CoreGraphics.framework */; };
+		17B5C6135803D7D23F03EF92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C5FFDD92A8E784220DD9 /* UIKit.framework */; };
+		17B5C6724B5D921710A58597 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7D1DD8F867320A4A805 /* Unit.m */; };
+		17B5C6CE4445B9F32EC36229 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CF46B0D413A823B439B2 /* CoreData.framework */; };
+		17B5C6FC06B79A682829FA46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C5FFDD92A8E784220DD9 /* UIKit.framework */; };
+		17B5C7223ED0B2CDC732B91D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CF46B0D413A823B439B2 /* CoreData.framework */; };
+		17B5C73647426D04929456BB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CB3FDF848F8A1DB57EF1 /* Default.png */; };
+		17B5C7579C2015BE53A643F3 /* ManagedMappingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */; };
+		17B5C8AD16D066878FC0C658 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C15E8541EB0EE2B25EDA /* Person.m */; };
+		17B5C8D28AEF2853F681E616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C3FDFACE785266D0AC89 /* InfoPlist.strings */; };
+		17B5C8D9CC8CDD4075481C47 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */; };
+		17B5C8E06169E94D9DBA80F3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C15E8541EB0EE2B25EDA /* Person.m */; };
+		17B5CB10C1E90F8D8CC7C4EF /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
+		17B5CCBC449E67161120D6F4 /* UnitTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD700B07489A261B4636 /* UnitTransformer.m */; };
+		17B5CD7F33069F999AA8539D /* unit.json in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7521DCB05F03305B805 /* unit.json */; };
+		17B5CD803729788C5EB571FC /* ManagedMappingObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */; };
+		17B5CD85A84972F7BD5A26A7 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C3151F13FD1674009844 /* person.json */; };
+		17B5CDDA6887B049A384213F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */; };
+		17B5CE9D8C03D8808DCAD065 /* _Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CBA082B8FC5E2191417A /* _Unit.m */; };
+		17B5CEE68C36767EC5D72FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FFB19EB31FB8FEC1CE /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17B5CD76E2EA8079654F9986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17B5C41FF2F8FD46DC46ABDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17B5CFCC0DEE8CC1D39F23B5;
+			remoteInfo = ManagedMappingObject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17B5C0A56652758D29590530 /* ManagedMappingObjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedMappingObjectTests.h; sourceTree = "<group>"; };
+		17B5C12676EA452046A25744 /* PersonJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonJSONModel.h; sourceTree = "<group>"; };
+		17B5C15E8541EB0EE2B25EDA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		17B5C3151F13FD1674009844 /* person.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = person.json; sourceTree = "<group>"; };
+		17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManagedMappingObjectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5C4745341458BB33243F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17B5C48C1275D157879E6F52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17B5C4D81902CB505EDB69D8 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
+		17B5C5FFB19EB31FB8FEC1CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17B5C5FFDD92A8E784220DD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17B5C6215752627A35CB2FF3 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
+		17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagedMappingObjectTests.m; sourceTree = "<group>"; };
+		17B5C666DD36784BB9F8388D /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
+		17B5C7281B0F03ACFA28B245 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		17B5C7521DCB05F03305B805 /* unit.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = unit.json; sourceTree = "<group>"; };
+		17B5C7D1DD8F867320A4A805 /* Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unit.m; sourceTree = "<group>"; };
+		17B5C7DB94FD45FABCA2E10B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17B5C7E016DBC2A9B790D628 /* ManagedMappingObjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ManagedMappingObjectTests-Info.plist"; sourceTree = "<group>"; };
+		17B5C805EEE1E99C9004B436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		17B5C922CD32CFE4F2F55064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17B5C9621B782B7F7D52BFC4 /* UnitJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitJSONModel.h; sourceTree = "<group>"; };
+		17B5C9C2E14348748199759F /* UnitJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitJSONModel.m; sourceTree = "<group>"; };
+		17B5C9C6CA38945006F1B985 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedMappingObject.m; sourceTree = "<group>"; };
+		17B5CA55B7F1590E284FE83E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		17B5CAA99267E6050AB375F9 /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
+		17B5CAD5F4ECFA0C8B2CAD98 /* mogenerator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogenerator.sh; sourceTree = "<group>"; };
+		17B5CAFC24F298148ED4B9BC /* PersonJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonJSONModel.m; sourceTree = "<group>"; };
+		17B5CB3FDF848F8A1DB57EF1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		17B5CB65A2FCAB9AC5A358EB /* _Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Unit.h; sourceTree = "<group>"; };
+		17B5CB7C756843DE1076B8AF /* ManagedMappingObject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManagedMappingObject-Prefix.pch"; sourceTree = "<group>"; };
+		17B5CBA082B8FC5E2191417A /* _Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Unit.m; sourceTree = "<group>"; };
+		17B5CC40BF6BA6124D348BB6 /* ManagedMappingObject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ManagedMappingObject-Info.plist"; sourceTree = "<group>"; };
+		17B5CCB43F1B2672EF2A21F1 /* ManagedMappingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedMappingObject.h; sourceTree = "<group>"; };
+		17B5CD148044B474C822EA3B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		17B5CD2CCA48C62F220010F4 /* UnitTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTransformer.h; sourceTree = "<group>"; };
+		17B5CD700B07489A261B4636 /* UnitTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTransformer.m; sourceTree = "<group>"; };
+		17B5CECC4BF7EA35A4078895 /* ManagedMappingObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ManagedMappingObject.xcdatamodel; sourceTree = "<group>"; };
+		17B5CF46B0D413A823B439B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		17B5CFDB9701612776B432B7 /* ManagedMappingObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManagedMappingObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ManagedMappingObjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManagedMappingObjectTests.xcconfig"; path = "Pods/Pods-ManagedMappingObjectTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17B5C2734EECC5C9C1A315B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5C8D9CC8CDD4075481C47 /* SenTestingKit.framework in Frameworks */,
+				17B5C6FC06B79A682829FA46 /* UIKit.framework in Frameworks */,
+				17B5CDDA6887B049A384213F /* Foundation.framework in Frameworks */,
+				17B5C7223ED0B2CDC732B91D /* CoreData.framework in Frameworks */,
+				0FCAF38A96DC43F98DC0E3A8 /* libPods-ManagedMappingObjectTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B5C3F35918FBD8FD9C016D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5C6135803D7D23F03EF92 /* UIKit.framework in Frameworks */,
+				17B5C1C1C36F594E21D10381 /* Foundation.framework in Frameworks */,
+				17B5C5ABD799F638AE820139 /* CoreGraphics.framework in Frameworks */,
+				17B5C6CE4445B9F32EC36229 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17B5C0BD658150DA46FEE069 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C7E016DBC2A9B790D628 /* ManagedMappingObjectTests-Info.plist */,
+				17B5CC9F54AE645418C285E6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17B5C1F9392EB17C62DA36B1 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CD700B07489A261B4636 /* UnitTransformer.m */,
+				17B5CD2CCA48C62F220010F4 /* UnitTransformer.h */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		17B5C2838A4F46D924D5C88F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CC40BF6BA6124D348BB6 /* ManagedMappingObject-Info.plist */,
+				17B5C3FDFACE785266D0AC89 /* InfoPlist.strings */,
+				17B5C5FFB19EB31FB8FEC1CE /* main.m */,
+				17B5CB7C756843DE1076B8AF /* ManagedMappingObject-Prefix.pch */,
+				17B5CB3FDF848F8A1DB57EF1 /* Default.png */,
+				17B5C7281B0F03ACFA28B245 /* Default@2x.png */,
+				17B5CA55B7F1590E284FE83E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17B5C52774E89581F6DE7044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CFDB9701612776B432B7 /* ManagedMappingObject.app */,
+				17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17B5C936667DAB23E072DF64 /* ManagedMappingObject */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C2838A4F46D924D5C88F /* Supporting Files */,
+				17B5C48C1275D157879E6F52 /* AppDelegate.h */,
+				17B5C7DB94FD45FABCA2E10B /* AppDelegate.m */,
+				17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */,
+				17B5C3151F13FD1674009844 /* person.json */,
+				17B5CB7B0817F532636A79A3 /* JSONModels */,
+				17B5CC60B2567F4A2CF9BA43 /* CoreDataModels */,
+				17B5CAD5F4ECFA0C8B2CAD98 /* mogenerator.sh */,
+				17B5C7521DCB05F03305B805 /* unit.json */,
+				17B5C1F9392EB17C62DA36B1 /* Transformer */,
+			);
+			path = ManagedMappingObject;
+			sourceTree = "<group>";
+		};
+		17B5CB7B0817F532636A79A3 /* JSONModels */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C12676EA452046A25744 /* PersonJSONModel.h */,
+				17B5CAFC24F298148ED4B9BC /* PersonJSONModel.m */,
+				17B5C9621B782B7F7D52BFC4 /* UnitJSONModel.h */,
+				17B5C9C2E14348748199759F /* UnitJSONModel.m */,
+			);
+			path = JSONModels;
+			sourceTree = "<group>";
+		};
+		17B5CC60B2567F4A2CF9BA43 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C15E8541EB0EE2B25EDA /* Person.m */,
+				17B5C666DD36784BB9F8388D /* _Person.h */,
+				17B5CAA99267E6050AB375F9 /* _Person.m */,
+				17B5CD148044B474C822EA3B /* Person.h */,
+				17B5C7D1DD8F867320A4A805 /* Unit.m */,
+				17B5CB65A2FCAB9AC5A358EB /* _Unit.h */,
+				17B5C4D81902CB505EDB69D8 /* Unit.h */,
+				17B5CBA082B8FC5E2191417A /* _Unit.m */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		17B5CD38AA8D2136736EFF1A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */,
+				17B5CCB43F1B2672EF2A21F1 /* ManagedMappingObject.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		17B5CD44F32FACDD7541B5EB /* ManagedMappingObjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C0BD658150DA46FEE069 /* Supporting Files */,
+				17B5C0A56652758D29590530 /* ManagedMappingObjectTests.h */,
+				17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */,
+			);
+			path = ManagedMappingObjectTests;
+			sourceTree = "<group>";
+		};
+		17B5CF01BB4619E93128F426 = {
+			isa = PBXGroup;
+			children = (
+				17B5C52774E89581F6DE7044 /* Products */,
+				17B5CF9F0066A0631788E817 /* Frameworks */,
+				17B5C936667DAB23E072DF64 /* ManagedMappingObject */,
+				17B5CD44F32FACDD7541B5EB /* ManagedMappingObjectTests */,
+				17B5CD38AA8D2136736EFF1A /* src */,
+				17B5C9C6CA38945006F1B985 /* Podfile */,
+				42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */,
+				17B5C6215752627A35CB2FF3 /* readme.md */,
+			);
+			sourceTree = "<group>";
+		};
+		17B5CF9F0066A0631788E817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C5FFDD92A8E784220DD9 /* UIKit.framework */,
+				17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */,
+				17B5C805EEE1E99C9004B436 /* CoreGraphics.framework */,
+				17B5CF46B0D413A823B439B2 /* CoreData.framework */,
+				17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */,
+				2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17B5C7B3C56103AAF67C8D2C /* ManagedMappingObjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B5C74A08008A1BE9CDD64E /* Build configuration list for PBXNativeTarget "ManagedMappingObjectTests" */;
+			buildPhases = (
+				1F1E824EFC654F53AAE725D9 /* Check Pods Manifest.lock */,
+				17B5CAB53E913278FAB77C31 /* Sources */,
+				17B5C2734EECC5C9C1A315B5 /* Frameworks */,
+				17B5C153A1A80895EF0A64E9 /* Resources */,
+				17B5C3635AF082695744BAF9 /* ShellScript */,
+				61DFA18FB7DD4B92A3EE4435 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17B5CC5F293C1376CA99328F /* PBXTargetDependency */,
+			);
+			name = ManagedMappingObjectTests;
+			productName = ManagedMappingObjectTests;
+			productReference = 17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B5CAB567B1B90CB64B99E2 /* Build configuration list for PBXNativeTarget "ManagedMappingObject" */;
+			buildPhases = (
+				17B5C2FBB199DAAE5D976525 /* Sources */,
+				17B5C3F35918FBD8FD9C016D /* Frameworks */,
+				17B5CCEC46BADA0236987FD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManagedMappingObject;
+			productName = ManagedMappingObject;
+			productReference = 17B5CFDB9701612776B432B7 /* ManagedMappingObject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17B5C41FF2F8FD46DC46ABDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = azu;
+			};
+			buildConfigurationList = 17B5CEA9968053386EE1A605 /* Build configuration list for PBXProject "ManagedMappingObject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17B5CF01BB4619E93128F426;
+			productRefGroup = 17B5C52774E89581F6DE7044 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */,
+				17B5C7B3C56103AAF67C8D2C /* ManagedMappingObjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17B5C153A1A80895EF0A64E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5C1A286D17EA0BFF4D237 /* InfoPlist.strings in Resources */,
+				17B5CD85A84972F7BD5A26A7 /* person.json in Resources */,
+				17B5C2242847828CDF5E4AE7 /* unit.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B5CCEC46BADA0236987FD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5C8D28AEF2853F681E616 /* InfoPlist.strings in Resources */,
+				17B5C73647426D04929456BB /* Default.png in Resources */,
+				17B5C1014D8426E19A14C556 /* Default@2x.png in Resources */,
+				17B5C21F1AD0BB4D255F42CA /* Default-568h@2x.png in Resources */,
+				17B5C3DA3791FEFFFECEF758 /* person.json in Resources */,
+				17B5CD7F33069F999AA8539D /* unit.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B5C3635AF082695744BAF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		1F1E824EFC654F53AAE725D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61DFA18FB7DD4B92A3EE4435 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ManagedMappingObjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17B5C2FBB199DAAE5D976525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5CEE68C36767EC5D72FC9 /* main.m in Sources */,
+				17B5C22AFD98BBF6D1FBEB6E /* AppDelegate.m in Sources */,
+				17B5CB10C1E90F8D8CC7C4EF /* ManagedMappingObject.xcdatamodeld in Sources */,
+				17B5C7579C2015BE53A643F3 /* ManagedMappingObject.m in Sources */,
+				17B5C8AD16D066878FC0C658 /* Person.m in Sources */,
+				17B5C1FAD3AD05E8F8ED0345 /* _Person.m in Sources */,
+				17B5C4E479C6B321016FD81F /* PersonJSONModel.m in Sources */,
+				17B5C317E65E0DFA116E4572 /* Unit.m in Sources */,
+				17B5CE9D8C03D8808DCAD065 /* _Unit.m in Sources */,
+				17B5C11B293920DE6620D535 /* UnitJSONModel.m in Sources */,
+				17B5CCBC449E67161120D6F4 /* UnitTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B5CAB53E913278FAB77C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5CD803729788C5EB571FC /* ManagedMappingObjectTests.m in Sources */,
+				17B5C0D5A67D51921E37E0E9 /* ManagedMappingObject.m in Sources */,
+				17B5C8E06169E94D9DBA80F3 /* Person.m in Sources */,
+				17B5C019583AA50DC8CA8EF9 /* _Person.m in Sources */,
+				17B5C47522034B8676954E16 /* PersonJSONModel.m in Sources */,
+				17B5C6724B5D921710A58597 /* Unit.m in Sources */,
+				17B5C15C00BE8DC4C23ABC39 /* _Unit.m in Sources */,
+				17B5C387A4F045E58FF5028A /* UnitJSONModel.m in Sources */,
+				17B5C2B7C4F8F4FDFEE02604 /* UnitTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17B5CC5F293C1376CA99328F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */;
+			targetProxy = 17B5CD76E2EA8079654F9986 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17B5C3FDFACE785266D0AC89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17B5C922CD32CFE4F2F55064 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17B5CC9F54AE645418C285E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17B5C4745341458BB33243F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17B5C0B556A1A7DF36CD52FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManagedMappingObject.app/ManagedMappingObject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
+				INFOPLIST_FILE = "ManagedMappingObjectTests/ManagedMappingObjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		17B5C6E97BF3359E3AA5AB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
+				INFOPLIST_FILE = "ManagedMappingObject/ManagedMappingObject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		17B5C89E0342DEAF4C3E6ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
+				INFOPLIST_FILE = "ManagedMappingObject/ManagedMappingObject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17B5C9087BD3A341182D7D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17B5CA540AAB6DE0A1C71359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17B5CC242722D002A5381B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManagedMappingObject.app/ManagedMappingObject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
+				INFOPLIST_FILE = "ManagedMappingObjectTests/ManagedMappingObjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17B5C74A08008A1BE9CDD64E /* Build configuration list for PBXNativeTarget "ManagedMappingObjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B5CC242722D002A5381B18 /* Release */,
+				17B5C0B556A1A7DF36CD52FA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17B5CAB567B1B90CB64B99E2 /* Build configuration list for PBXNativeTarget "ManagedMappingObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B5C6E97BF3359E3AA5AB04 /* Release */,
+				17B5C89E0342DEAF4C3E6ECA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17B5CEA9968053386EE1A605 /* Build configuration list for PBXProject "ManagedMappingObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B5C9087BD3A341182D7D49 /* Release */,
+				17B5CA540AAB6DE0A1C71359 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17B5CECC4BF7EA35A4078895 /* ManagedMappingObject.xcdatamodel */,
+			);
+			currentVersion = 17B5CECC4BF7EA35A4078895 /* ManagedMappingObject.xcdatamodel */;
+			path = ManagedMappingObject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 17B5C41FF2F8FD46DC46ABDE /* Project object */;
+}
