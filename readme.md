@@ -7,6 +7,7 @@ Converting NSManagedObject to NSDictionary (and back again).
 ## Installation
 
 ```ruby
+pod 'ManagedMappingObject', :git => 'https://github.com/azu/ManagedMappingObject.git'
 ```
 
 ## Usage
