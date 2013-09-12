@@ -20,7 +20,7 @@ NSManageObject class must implement ``<ManagedMappingProtocol>`` .
 2. Create ``NSValueTransformer`` subclass if transform value .
 
 * ``UnitTransformer`` in example case.
-* implement ``+ (NSDictionary *)JSONValueTransformerNames`` of ``<ManagedMappingProtocol>`.
+* implement ``+ (NSDictionary *)JSONValueTransformerNames`` of ``<ManagedMappingProtocol>``.
 
 
 ### NSDictionary Model
@@ -28,7 +28,7 @@ NSManageObject class must implement ``<ManagedMappingProtocol>`` .
 Raw NSDictionary is difficult to deal with,
 so this example project use [JSON Accelerator](http://www.nerdery.com/json-accelerator "JSON Accelerator").
 
-``*JSONModel`` class has following methods is useful.
+``fooJSONModel`` class has following methods is useful.
 
 ```objc
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
@@ -46,3 +46,9 @@ so this example project use [JSON Accelerator](http://www.nerdery.com/json-accel
 ## License
 
 MIT
+
+## Acknowledgment
+
+Thanks @[ishkawa](https://github.com/ishkawa/ "ishkawa")
+
+* [MantleのようなノリでJSON&gt;NSManagedObjectを楽にしたかった](http://blog.ishkawa.org/blog/2013/06/24/keymap-and-valuetransformer/ "MantleのようなノリでJSON&gt;NSManagedObjectを楽にしたかった")
