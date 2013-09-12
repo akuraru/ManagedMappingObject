@@ -38,7 +38,7 @@ mogenerator -m ManagedMappingObject.xcdatamodeld -O CoreDataModels \
 Raw NSDictionary is difficult to deal with,
 so this example project use [JSON Accelerator](http://www.nerdery.com/json-accelerator "JSON Accelerator").
 
-``fooJSONModel`` class has following methods is useful.
+``fooJSONModel`` class has following useful methods :
 
 ```objc
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
