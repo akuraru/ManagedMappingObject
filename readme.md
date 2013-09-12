@@ -34,10 +34,14 @@ mogenerator -m ManagedMappingObject.xcdatamodeld -O CoreDataModels \
 
 ``` objc
 // NSDictionary -> NSManagedObject
-+ (instancetype)insertWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context;
++ (instancetype)insertNewWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context;
+// update NSManagedObject
+- (void)updateWithDictionary:(NSDictionary *) dictionary;
 // NSManagedObject -> NSDictionary
 - (NSDictionary *)dictionaryRepresentation;
 ```
+
+NOTE: These methods ignore ``nil``.
 
 ### NSDictionary Model
 
