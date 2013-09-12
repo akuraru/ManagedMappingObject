@@ -6,7 +6,7 @@ Converting NSManagedObject to NSDictionary (and back again).
 
 ## Usage
 
-1. Setup NSManageObject class.
+1 Setup NSManageObject class.
 
 You can easily generate using [mogenerator](https://github.com/rentzsch/mogenerator "mogenerator").
 
@@ -18,11 +18,19 @@ mogenerator -m ManagedMappingObject.xcdatamodeld -O CoreDataModels \
 
 NSManageObject class must implement ``<ManagedMappingProtocol>`` .
 
-2. Create ``NSValueTransformer`` subclass if transform value .
+2 Create ``NSValueTransformer`` subclass if transform value .
 
 * ``UnitTransformer`` in example case.
 * implement ``+ (NSDictionary *)JSONValueTransformerNames`` of ``<ManagedMappingProtocol>``.
 
+3 You use following method in NSManageObject, after setup.
+
+``` objc
+// NSDictionary -> NSManagedObject
++ (instancetype)insertWithDictionary:(NSDictionary *) dictionary managedObjectContext:(NSManagedObjectContext *) context;
+// NSManagedObject -> NSDictionary
+- (NSDictionary *)dictionaryRepresentation;
+```
 
 ### NSDictionary Model
 
