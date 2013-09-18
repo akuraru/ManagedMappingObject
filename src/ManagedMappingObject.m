@@ -41,15 +41,14 @@
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
         id dictionaryValue = dictionary[dictionaryKey];
-        if (dictionaryValue == nil) {
-            continue;
-        }
         NSString *transformerName = valueTransformerNames[objectKey];
         if (transformerName) {
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];
             dictionaryValue = [transformer transformedValue:dictionaryValue];
         }
-        [managedObject setValue:dictionaryValue forKey:objectKey];
+        if (dictionaryValue != nil) {
+            [managedObject setValue:dictionaryValue forKey:objectKey];
+        }
     }
 }
 
@@ -60,9 +59,6 @@
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
         id dictionaryValue = [self valueForKey:objectKey];
-        if (dictionaryValue == nil) {
-            continue;
-        }
         NSString *transformerName = valueTransformerNames[objectKey];
         if (transformerName) {
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];
@@ -70,7 +66,9 @@
                 dictionaryValue = [transformer reverseTransformedValue:dictionaryValue];
             }
         }
-        [results setObject:dictionaryValue forKey:dictionaryKey];
+        if (dictionaryValue != nil) {
+            [results setObject:dictionaryValue forKey:dictionaryKey];
+        }
     }
     return results;
 }
