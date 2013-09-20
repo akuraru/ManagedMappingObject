@@ -58,7 +58,7 @@
     NSDictionary *valueTransformerNames = [[self class] JSONValueTransformerNames];
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
-        id dictionaryValue = [self valueForKey:objectKey];
+        id dictionaryValue = [self valueForKeyPath:objectKey]; // support relationship by putting keyPath.
         NSString *transformerName = valueTransformerNames[objectKey];
         if (transformerName) {
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];
