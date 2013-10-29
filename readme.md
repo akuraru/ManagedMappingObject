@@ -53,7 +53,7 @@ e.g.)
 }
 ```
 
-3 You use following method in NSManagedObject, after setup.
+3 You can use following method in NSManagedObject, after setup.
 
 ``` objc
 // NSDictionary -> NSManagedObject
