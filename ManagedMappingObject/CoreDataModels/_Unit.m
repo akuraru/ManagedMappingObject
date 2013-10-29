@@ -6,9 +6,11 @@
 const struct UnitAttributes UnitAttributes = {
 	.centimeter = @"centimeter",
 	.date = @"date",
+	.identifier = @"identifier",
 };
 
 const struct UnitRelationships UnitRelationships = {
+	.person = @"person",
 };
 
 const struct UnitFetchedProperties UnitFetchedProperties = {
@@ -84,6 +86,17 @@ const struct UnitFetchedProperties UnitFetchedProperties = {
 
 
 
+
+@dynamic identifier;
+
+
+
+
+
+
+@dynamic person;
+
+	
 
 
 

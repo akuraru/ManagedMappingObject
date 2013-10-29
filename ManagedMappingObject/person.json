@@ -1,5 +1,6 @@
 {
     "id"  : "xxx-xxx-xxx",
     "name": "John",
-    "age" : 28
+    "age" : 28,
+    "units": [1,2,3]
 }

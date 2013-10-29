@@ -81,11 +81,17 @@
     [person_tw updateWithDictionary:jsonModel.dictionaryRepresentation];
     STAssertTrue([self isEqualPropertyOfPerson:person toPerson:person_tw], @"not update with missing key");
 }
+
+- (void)testTransformRelationShipToMany{
+    PersonJSONModel *jsonModel = [self personJSONModel];
+    Person *person = [Person insertNewWithDictionary:jsonModel.dictionaryRepresentation managedObjectContext:[NSManagedObjectContext MR_defaultContext]];
+    NSLog(@"[person dictionaryRepresentation] = %@", [person dictionaryRepresentation]);
+}
+
 - (BOOL)isEqualPropertyOfPerson:(Person *) person toPerson:(Person *) toPerson {
     return ([person.name isEqualToString:toPerson.name]
         && [person.identifier isEqualToString:toPerson.identifier]
         && [person.age isEqualToNumber:toPerson.age]);
 }
-
 
 @end

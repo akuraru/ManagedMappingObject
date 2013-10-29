@@ -10,6 +10,7 @@ const struct PersonAttributes PersonAttributes = {
 };
 
 const struct PersonRelationships PersonRelationships = {
+	.units = @"units",
 };
 
 const struct PersonFetchedProperties PersonFetchedProperties = {
@@ -92,6 +93,19 @@ const struct PersonFetchedProperties PersonFetchedProperties = {
 
 
 
+
+@dynamic units;
+
+	
+- (NSMutableSet*)unitsSet {
+	[self willAccessValueForKey:@"units"];
+  
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"units"];
+  
+	[self didAccessValueForKey:@"units"];
+	return result;
+}
+	
 
 
 

@@ -7,13 +7,17 @@
 extern const struct UnitAttributes {
 	__unsafe_unretained NSString *centimeter;
 	__unsafe_unretained NSString *date;
+	__unsafe_unretained NSString *identifier;
 } UnitAttributes;
 
 extern const struct UnitRelationships {
+	__unsafe_unretained NSString *person;
 } UnitRelationships;
 
 extern const struct UnitFetchedProperties {
 } UnitFetchedProperties;
+
+@class Person;
 
 
 
@@ -56,6 +60,23 @@ extern const struct UnitFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString* identifier;
+
+
+
+//- (BOOL)validateIdentifier:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) Person *person;
+
+//- (BOOL)validatePerson:(id*)value_ error:(NSError**)error_;
+
+
+
+
 
 @end
 
@@ -79,6 +100,17 @@ extern const struct UnitFetchedProperties {
 - (void)setPrimitiveDate:(NSDate*)value;
 
 
+
+
+- (NSString*)primitiveIdentifier;
+- (void)setPrimitiveIdentifier:(NSString*)value;
+
+
+
+
+
+- (Person*)primitivePerson;
+- (void)setPrimitivePerson:(Person*)value;
 
 
 @end

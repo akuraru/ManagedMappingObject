@@ -12,6 +12,7 @@
 @implementation Unit
 + (NSDictionary *)JSONKeyMap {
     return @{
+        UnitAttributes.identifier : @"id",
         UnitAttributes.date : @"unix_time",
         UnitAttributes.centimeter : @"meter"
     };

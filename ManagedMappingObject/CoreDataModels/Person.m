@@ -1,4 +1,6 @@
 #import "Person.h"
+#import "Unit.h"
+#import "PersonTransformer.h"
 
 
 @interface Person ()
@@ -16,11 +18,14 @@
     return @{
         PersonAttributes.identifier : @"id",
         PersonAttributes.name : @"name",
-        PersonAttributes.age : @"age"
+        PersonAttributes.age : @"age",
+        PersonRelationships.units : @"units"
     };
 }
 
 + (NSDictionary *)JSONValueTransformerNames {
-    return nil;
+    return @{
+        PersonRelationships.units : NSStringFromClass([PersonUnitTransformer class])
+    };
 }
 @end

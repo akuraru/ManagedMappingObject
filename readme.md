@@ -30,6 +30,29 @@ mogenerator -m ManagedMappingObject.xcdatamodeld -O CoreDataModels \
 * ``UnitTransformer`` in example case.
 * implement ``+ (NSDictionary *)JSONValueTransformerNames`` of ``<ManagedMappingProtocol>``.
 
+e.g.)
+
+``` objc
++ (NSDictionary *)JSONKeyMap {
+    return @{
+        UnitAttributes.identifier : @"id",
+        UnitAttributes.date : @"unix_time",
+        UnitAttributes.centimeter : @"meter"
+    };
+}
+
++ (NSDictionary *)JSONValueTransformerNames {
+    return @{
+        UnitAttributes.centimeter : NSStringFromClass([MeterToCentimeterTransformer class]),
+        UnitAttributes.date : NSStringFromClass([UnixTimeToNSDateTransformer class])
+    };
+}
+
++ (NSString *)entityName {
+    return [super entityName];
+}
+```
+
 3 You use following method in NSManagedObject, after setup.
 
 ``` objc

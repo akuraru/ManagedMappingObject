@@ -11,11 +11,13 @@ extern const struct PersonAttributes {
 } PersonAttributes;
 
 extern const struct PersonRelationships {
+	__unsafe_unretained NSString *units;
 } PersonRelationships;
 
 extern const struct PersonFetchedProperties {
 } PersonFetchedProperties;
 
+@class Unit;
 
 
 
@@ -68,10 +70,22 @@ extern const struct PersonFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSSet *units;
+
+- (NSMutableSet*)unitsSet;
+
+
+
+
 
 @end
 
 @interface _Person (CoreDataGeneratedAccessors)
+
+- (void)addUnits:(NSSet*)value_;
+- (void)removeUnits:(NSSet*)value_;
+- (void)addUnitsObject:(Unit*)value_;
+- (void)removeUnitsObject:(Unit*)value_;
 
 @end
 
@@ -97,6 +111,11 @@ extern const struct PersonFetchedProperties {
 - (void)setPrimitiveName:(NSString*)value;
 
 
+
+
+
+- (NSMutableSet*)primitiveUnits;
+- (void)setPrimitiveUnits:(NSMutableSet*)value;
 
 
 @end

@@ -1,5 +1,6 @@
 platform :ios, '5.0'
 
+pod 'MagicalRecord'
 target :ManagedMappingObjectTests, :exclusive => true do
 	pod 'MagicalRecord'
 end

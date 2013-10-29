@@ -37,15 +37,18 @@
 		17B5C8D28AEF2853F681E616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C3FDFACE785266D0AC89 /* InfoPlist.strings */; };
 		17B5C8D9CC8CDD4075481C47 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */; };
 		17B5C8E06169E94D9DBA80F3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C15E8541EB0EE2B25EDA /* Person.m */; };
+		17B5C8E808FF9385EA7F4785 /* PersonTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0E1252527FA2F7BCF50 /* PersonTransformer.m */; };
 		17B5CB10C1E90F8D8CC7C4EF /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
 		17B5CCBC449E67161120D6F4 /* UnitTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD700B07489A261B4636 /* UnitTransformer.m */; };
 		17B5CD7F33069F999AA8539D /* unit.json in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7521DCB05F03305B805 /* unit.json */; };
 		17B5CD803729788C5EB571FC /* ManagedMappingObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */; };
 		17B5CD85A84972F7BD5A26A7 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C3151F13FD1674009844 /* person.json */; };
+		17B5CDA15D2A97B7C794D126 /* PersonTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0E1252527FA2F7BCF50 /* PersonTransformer.m */; };
 		17B5CDDA6887B049A384213F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */; };
 		17B5CE9D8C03D8808DCAD065 /* _Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CBA082B8FC5E2191417A /* _Unit.m */; };
 		17B5CEE68C36767EC5D72FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FFB19EB31FB8FEC1CE /* main.m */; };
 		73741C7917E164D600E42069 /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
+		BF1649E4600844339F22A896 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAFEAB839E34D45A1A998C5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +62,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		17B5C0A56652758D29590530 /* ManagedMappingObjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedMappingObjectTests.h; sourceTree = "<group>"; };
+		17B5C0E1252527FA2F7BCF50 /* PersonTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTransformer.m; sourceTree = "<group>"; };
 		17B5C12676EA452046A25744 /* PersonJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonJSONModel.h; sourceTree = "<group>"; };
 		17B5C15E8541EB0EE2B25EDA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		17B5C3151F13FD1674009844 /* person.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = person.json; sourceTree = "<group>"; };
 		17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManagedMappingObjectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C4745341458BB33243F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C48C1275D157879E6F52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17B5C4C65A2ADE36071946EE /* PersonTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTransformer.h; sourceTree = "<group>"; };
 		17B5C4D81902CB505EDB69D8 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
 		17B5C5FFB19EB31FB8FEC1CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C5FFDD92A8E784220DD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -87,7 +93,6 @@
 		17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedMappingObject.m; sourceTree = "<group>"; };
 		17B5CA55B7F1590E284FE83E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17B5CAA99267E6050AB375F9 /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
-		17B5CAD5F4ECFA0C8B2CAD98 /* mogenerator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogenerator.sh; sourceTree = "<group>"; };
 		17B5CAFC24F298148ED4B9BC /* PersonJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonJSONModel.m; sourceTree = "<group>"; };
 		17B5CB3FDF848F8A1DB57EF1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17B5CB65A2FCAB9AC5A358EB /* _Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Unit.h; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 		17B5CFDB9701612776B432B7 /* ManagedMappingObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManagedMappingObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ManagedMappingObjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManagedMappingObjectTests.xcconfig"; path = "Pods/Pods-ManagedMappingObjectTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		CEAFEAB839E34D45A1A998C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 				17B5C1C1C36F594E21D10381 /* Foundation.framework in Frameworks */,
 				17B5C5ABD799F638AE820139 /* CoreGraphics.framework in Frameworks */,
 				17B5C6CE4445B9F32EC36229 /* CoreData.framework in Frameworks */,
+				BF1649E4600844339F22A896 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,8 @@
 			children = (
 				17B5CD700B07489A261B4636 /* UnitTransformer.m */,
 				17B5CD2CCA48C62F220010F4 /* UnitTransformer.h */,
+				17B5C0E1252527FA2F7BCF50 /* PersonTransformer.m */,
+				17B5C4C65A2ADE36071946EE /* PersonTransformer.h */,
 			);
 			path = Transformer;
 			sourceTree = "<group>";
@@ -183,7 +192,6 @@
 				17B5C3151F13FD1674009844 /* person.json */,
 				17B5CB7B0817F532636A79A3 /* JSONModels */,
 				17B5CC60B2567F4A2CF9BA43 /* CoreDataModels */,
-				17B5CAD5F4ECFA0C8B2CAD98 /* mogenerator.sh */,
 				17B5C7521DCB05F03305B805 /* unit.json */,
 				17B5C1F9392EB17C62DA36B1 /* Transformer */,
 			);
@@ -246,6 +254,7 @@
 				17B5C9C6CA38945006F1B985 /* Podfile */,
 				42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */,
 				17B5C6215752627A35CB2FF3 /* readme.md */,
+				1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +267,7 @@
 				17B5CF46B0D413A823B439B2 /* CoreData.framework */,
 				17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */,
 				2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */,
+				CEAFEAB839E34D45A1A998C5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -290,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B5CAB567B1B90CB64B99E2 /* Build configuration list for PBXNativeTarget "ManagedMappingObject" */;
 			buildPhases = (
+				2A42B9BC8DA24800AAC92B97 /* Check Pods Manifest.lock */,
 				17B5C2FBB199DAAE5D976525 /* Sources */,
 				17B5C3F35918FBD8FD9C016D /* Frameworks */,
 				17B5CCEC46BADA0236987FD1 /* Resources */,
+				66226F39BDB5484CA5FB24EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +333,8 @@
 			mainGroup = 17B5CF01BB4619E93128F426;
 			productRefGroup = 17B5C52774E89581F6DE7044 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */,
@@ -384,6 +398,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		2A42B9BC8DA24800AAC92B97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		61DFA18FB7DD4B92A3EE4435 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +426,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-ManagedMappingObjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66226F39BDB5484CA5FB24EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -417,6 +461,7 @@
 				17B5CE9D8C03D8808DCAD065 /* _Unit.m in Sources */,
 				17B5C11B293920DE6620D535 /* UnitJSONModel.m in Sources */,
 				17B5CCBC449E67161120D6F4 /* UnitTransformer.m in Sources */,
+				17B5C8E808FF9385EA7F4785 /* PersonTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +479,7 @@
 				17B5C387A4F045E58FF5028A /* UnitJSONModel.m in Sources */,
 				17B5C2B7C4F8F4FDFEE02604 /* UnitTransformer.m in Sources */,
 				73741C7917E164D600E42069 /* ManagedMappingObject.xcdatamodeld in Sources */,
+				17B5CDA15D2A97B7C794D126 /* PersonTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +534,7 @@
 		};
 		17B5C6E97BF3359E3AA5AB04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
@@ -499,6 +546,7 @@
 		};
 		17B5C89E0342DEAF4C3E6ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
