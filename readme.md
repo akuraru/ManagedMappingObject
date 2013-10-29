@@ -68,7 +68,7 @@ NOTE: These methods ignore ``nil``.
 
 **Example**
 
-See [Example](ManagedMappingObject) codes for details on.
+See [Example](ManagedMappingObject) and [Tests](ManagedMappingObjectTests) for details on.
 
 ### Bonus : NSDictionary Model
 
