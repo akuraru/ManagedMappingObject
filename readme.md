@@ -1,6 +1,6 @@
 # ManagedMappingObject
 
-``NSManagedObject`` <-> ``NSDictionary`` (e.g JSON Model class)
+``NSManagedObject`` <-> ``NSDictionary`` (e.g. JSON Model class)
 
 Converting NSManagedObject to NSDictionary (and back again).
 
@@ -25,7 +25,7 @@ mogenerator -m ManagedMappingObject.xcdatamodeld -O CoreDataModels \
 * Target ``NSManagedObject`` class must be subclass of ``ManagedMappingObject``.
 * Target ``NSManagedObject`` class must implement ``<ManagedMappingProtocol>`` .
 
-2 Create ``NSValueTransformer`` subclass if transform value .
+2 Create ``NSValueTransformer`` subclass if need betransformed value.
 
 * ``UnitTransformer`` in example case.
 * implement ``+ (NSDictionary *)JSONValueTransformerNames`` of ``<ManagedMappingProtocol>``.
@@ -66,7 +66,11 @@ e.g.)
 
 NOTE: These methods ignore ``nil``.
 
-### NSDictionary Model
+**Example**
+
+See [Example](ManagedMappingObject) codes for details on.
+
+### Bonus : NSDictionary Model
 
 Raw NSDictionary is difficult to deal with,
 so this example project use [JSON Accelerator](http://www.nerdery.com/json-accelerator "JSON Accelerator").
