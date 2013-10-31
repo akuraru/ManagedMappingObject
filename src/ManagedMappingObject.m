@@ -47,7 +47,7 @@
             dictionaryValue = [transformer transformedValue:dictionaryValue];
         }
         if (dictionaryValue != nil) {
-            [managedObject setValue:dictionaryValue forKey:objectKey];
+            [managedObject setValue:dictionaryValue forKeyPath:objectKey];
         }
     }
 }
