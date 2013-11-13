@@ -67,7 +67,13 @@
             }
         }
         if (dictionaryValue != nil) {
-            [results setObject:dictionaryValue forKey:dictionaryKey];
+            // BOOL issue https://github.com/azu/ManagedMappingObject/issues/1
+            NSAttributeDescription *attribute = [[[self entity] attributesByName] objectForKey:objectKey];
+            if (attribute.attributeType == NSBooleanAttributeType) {
+                [results setObject:@([dictionaryValue boolValue]) forKey:dictionaryKey];
+            } else {
+                [results setObject:dictionaryValue forKey:dictionaryKey];
+            }
         }
     }
     return results;
