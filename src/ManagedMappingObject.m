@@ -66,13 +66,18 @@
                 dictionaryValue = [transformer reverseTransformedValue:dictionaryValue];
             }
         }
-        if (dictionaryValue != nil) {
+        if (dictionaryValue == nil) {
+            continue;
+        }
+        if ([dictionaryValue isKindOfClass:[NSNumber class]]) {
             NSAttributeDescription *attributeDescription = [self attributeDescriptionForKeyPath:objectKey];
             if (attributeDescription.attributeType == NSBooleanAttributeType) {
                 [results setObject:@([dictionaryValue boolValue]) forKey:dictionaryKey];
             } else {
                 [results setObject:dictionaryValue forKey:dictionaryKey];
             }
+        } else {
+            [results setObject:dictionaryValue forKey:dictionaryKey];
         }
     }
     return results;
