@@ -85,7 +85,7 @@
 - (void)testTransformRelationShipToMany{
     PersonJSONModel *jsonModel = [self personJSONModel];
     Person *person = [Person insertNewWithDictionary:jsonModel.dictionaryRepresentation managedObjectContext:[NSManagedObjectContext MR_defaultContext]];
-    NSLog(@"[person dictionaryRepresentation] = %@", [person dictionaryRepresentation]);
+    STAssertTrue([[person dictionaryRepresentation] isKindOfClass:[NSDictionary class]], @"should be NSDictionary");
 }
 
 - (BOOL)isEqualPropertyOfPerson:(Person *) person toPerson:(Person *) toPerson {

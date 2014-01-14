@@ -67,9 +67,8 @@
             }
         }
         if (dictionaryValue != nil) {
-            // BOOL issue https://github.com/azu/ManagedMappingObject/issues/1
-            NSAttributeDescription *attribute = [[[self entity] attributesByName] objectForKey:objectKey];
-            if (attribute.attributeType == NSBooleanAttributeType) {
+            NSAttributeDescription *attributeDescription = [self attributeDescriptionForKeyPath:objectKey];
+            if (attributeDescription.attributeType == NSBooleanAttributeType) {
                 [results setObject:@([dictionaryValue boolValue]) forKey:dictionaryKey];
             } else {
                 [results setObject:dictionaryValue forKey:dictionaryKey];
@@ -77,6 +76,33 @@
         }
     }
     return results;
+}
+
+- (NSString *)lastKeyForKeyPath:(NSString *) keyPath {
+    return [[keyPath componentsSeparatedByString:@"."] lastObject];
+}
+
+- (NSManagedObject *)managedObject:(NSManagedObject *) managedObject forKeyPath:(NSString *) keyPath {
+    NSUInteger location = [keyPath rangeOfString:@"."].location;
+    if (location != NSNotFound) {
+        NSString *key = [keyPath substringToIndex:location];
+        NSManagedObject *rightObject = [managedObject valueForKey:key];
+        return [self managedObject:rightObject forKeyPath:[keyPath substringFromIndex:location + 1]];
+    } else {
+        return managedObject;
+    }
+}
+
+- (NSAttributeDescription *)attributeDescriptionForKeyPath:(NSString *) keyPath {
+    if ([keyPath rangeOfString:@"."].location != NSNotFound) {
+        // https://github.com/azu/ManagedMappingObject/issues/2
+        __weak typeof (self) that = self;
+        NSManagedObject *managedObject = [self managedObject:that forKeyPath:keyPath];
+        return [[[managedObject entity] attributesByName] objectForKey:[self lastKeyForKeyPath:keyPath]];
+    } else {
+        // BOOL issue https://github.com/azu/ManagedMappingObject/issues/1
+        return [[[self entity] attributesByName] objectForKey:keyPath];
+    }
 }
 
 @end
