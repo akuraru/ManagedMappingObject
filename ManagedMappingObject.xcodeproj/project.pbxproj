@@ -88,7 +88,7 @@
 		17B5C922CD32CFE4F2F55064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C9621B782B7F7D52BFC4 /* UnitJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitJSONModel.h; sourceTree = "<group>"; };
 		17B5C9C2E14348748199759F /* UnitJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitJSONModel.m; sourceTree = "<group>"; };
-		17B5C9C6CA38945006F1B985 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17B5C9C6CA38945006F1B985 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedMappingObject.m; sourceTree = "<group>"; };
 		17B5CA55B7F1590E284FE83E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -333,8 +333,6 @@
 			mainGroup = 17B5CF01BB4619E93128F426;
 			productRefGroup = 17B5C52774E89581F6DE7044 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */,
