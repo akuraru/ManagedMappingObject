@@ -46,7 +46,7 @@
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];
             dictionaryValue = [transformer transformedValue:dictionaryValue];
         }
-        if (dictionaryValue != nil) {
+        if (dictionaryValue != nil && dictionaryValue != [NSNull null]) {
             [managedObject setValue:dictionaryValue forKeyPath:objectKey];
         }
     }
