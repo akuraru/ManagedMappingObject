@@ -6,8 +6,11 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "azu" => "info@efcl.info" }
-  s.ios.deployment_target = '5.0'
-  s.source       = { :git => "https://github.com/azu/ManagedMappingObject.git" }
+  s.ios.deployment_target = '6.0'
+  s.source       = {
+    :git => "https://github.com/azu/ManagedMappingObject.git"
+    :tag => s.version.to_s
+  }
   s.source_files = 'src/**/*.{h,m}'
   s.framework    = 'CoreData'
   s.requires_arc = true
