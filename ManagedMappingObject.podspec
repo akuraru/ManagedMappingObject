@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "azu" => "info@efcl.info" }
   s.ios.deployment_target = '6.0'
   s.source       = {
-    :git => "https://github.com/azu/ManagedMappingObject.git"
+    :git => "https://github.com/azu/ManagedMappingObject.git",
     :tag => s.version.to_s
   }
   s.source_files = 'src/**/*.{h,m}'
