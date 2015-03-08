@@ -4,10 +4,19 @@
 
 
 #import "ManagedMappingObject.h"
+#import "MappingService.h"
+
+@interface ManagedMappingObject () <ManagedMappingProtocol>
+
+@end
 
 
 @implementation ManagedMappingObject {
 
+}
+
++ (NSString *)entityName {
+    return nil;
 }
 
 + (NSDictionary *)JSONKeyMap {
@@ -46,8 +55,12 @@
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];
             dictionaryValue = [transformer transformedValue:dictionaryValue];
         }
-        if (dictionaryValue != nil && dictionaryValue != [NSNull null]) {
-            [managedObject setValue:dictionaryValue forKeyPath:objectKey];
+        if (dictionaryValue != nil) {
+            if (dictionaryValue == [NSNull null]) {
+                [managedObject setValue:nil forKeyPath:objectKey];
+            } else {
+                [managedObject setValue:dictionaryValue forKeyPath:objectKey];
+            }
         }
     }
 }
