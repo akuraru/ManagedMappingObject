@@ -35,7 +35,6 @@
 		17B5C7579C2015BE53A643F3 /* ManagedMappingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */; };
 		17B5C8AD16D066878FC0C658 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C15E8541EB0EE2B25EDA /* Person.m */; };
 		17B5C8D28AEF2853F681E616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C3FDFACE785266D0AC89 /* InfoPlist.strings */; };
-		17B5C8D9CC8CDD4075481C47 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */; };
 		17B5C8E06169E94D9DBA80F3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C15E8541EB0EE2B25EDA /* Person.m */; };
 		17B5C8E808FF9385EA7F4785 /* PersonTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0E1252527FA2F7BCF50 /* PersonTransformer.m */; };
 		17B5CB10C1E90F8D8CC7C4EF /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
@@ -49,6 +48,7 @@
 		17B5CEE68C36767EC5D72FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FFB19EB31FB8FEC1CE /* main.m */; };
 		73741C7917E164D600E42069 /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
 		BF1649E4600844339F22A896 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAFEAB839E34D45A1A998C5 /* libPods.a */; };
+		C879014B4BD48C556A895DC5 /* MappingService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790614E9BA2A5001D513F4 /* MappingService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		17B5C0A56652758D29590530 /* ManagedMappingObjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedMappingObjectTests.h; sourceTree = "<group>"; };
 		17B5C0E1252527FA2F7BCF50 /* PersonTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTransformer.m; sourceTree = "<group>"; };
 		17B5C12676EA452046A25744 /* PersonJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonJSONModel.h; sourceTree = "<group>"; };
 		17B5C15E8541EB0EE2B25EDA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 		17B5C7DB94FD45FABCA2E10B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17B5C7E016DBC2A9B790D628 /* ManagedMappingObjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ManagedMappingObjectTests-Info.plist"; sourceTree = "<group>"; };
 		17B5C805EEE1E99C9004B436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		17B5C922CD32CFE4F2F55064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C9621B782B7F7D52BFC4 /* UnitJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitJSONModel.h; sourceTree = "<group>"; };
 		17B5C9C2E14348748199759F /* UnitJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitJSONModel.m; sourceTree = "<group>"; };
@@ -106,9 +103,14 @@
 		17B5CECC4BF7EA35A4078895 /* ManagedMappingObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ManagedMappingObject.xcdatamodel; sourceTree = "<group>"; };
 		17B5CF46B0D413A823B439B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		17B5CFDB9701612776B432B7 /* ManagedMappingObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManagedMappingObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D745E4EA9C4B866ED8E9647 /* Pods-ManagedMappingObjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManagedMappingObjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManagedMappingObjectTests/Pods-ManagedMappingObjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ManagedMappingObjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManagedMappingObjectTests.xcconfig"; path = "Pods/Pods-ManagedMappingObjectTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		4F5DDB94367DED6E3E6CB32C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		74AAE0AB6B5E15F40944E319 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C8790614E9BA2A5001D513F4 /* MappingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingService.m; sourceTree = "<group>"; };
+		C8790FC92DE6C9E0CF49DA46 /* MappingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingService.h; sourceTree = "<group>"; };
 		CEAFEAB839E34D45A1A998C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18B30383AF9249E9E5701C8 /* Pods-ManagedMappingObjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManagedMappingObjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManagedMappingObjectTests/Pods-ManagedMappingObjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B5C8D9CC8CDD4075481C47 /* SenTestingKit.framework in Frameworks */,
 				17B5C6FC06B79A682829FA46 /* UIKit.framework in Frameworks */,
 				17B5CDDA6887B049A384213F /* Foundation.framework in Frameworks */,
 				17B5C7223ED0B2CDC732B91D /* CoreData.framework in Frameworks */,
@@ -229,6 +230,8 @@
 			children = (
 				17B5C9F75BD596AF4FF21D29 /* ManagedMappingObject.m */,
 				17B5CCB43F1B2672EF2A21F1 /* ManagedMappingObject.h */,
+				C8790614E9BA2A5001D513F4 /* MappingService.m */,
+				C8790FC92DE6C9E0CF49DA46 /* MappingService.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -237,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				17B5C0BD658150DA46FEE069 /* Supporting Files */,
-				17B5C0A56652758D29590530 /* ManagedMappingObjectTests.h */,
 				17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */,
 			);
 			path = ManagedMappingObjectTests;
@@ -252,9 +254,8 @@
 				17B5CD44F32FACDD7541B5EB /* ManagedMappingObjectTests */,
 				17B5CD38AA8D2136736EFF1A /* src */,
 				17B5C9C6CA38945006F1B985 /* Podfile */,
-				42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */,
 				17B5C6215752627A35CB2FF3 /* readme.md */,
-				1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */,
+				62DEAC1E4B429A395BDBBACC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,11 +266,21 @@
 				17B5C9D81EE0E1C4ACB2C9FB /* Foundation.framework */,
 				17B5C805EEE1E99C9004B436 /* CoreGraphics.framework */,
 				17B5CF46B0D413A823B439B2 /* CoreData.framework */,
-				17B5C8E1A45B4B2D362BB8CC /* SenTestingKit.framework */,
 				2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */,
 				CEAFEAB839E34D45A1A998C5 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62DEAC1E4B429A395BDBBACC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F5DDB94367DED6E3E6CB32C /* Pods.release.xcconfig */,
+				74AAE0AB6B5E15F40944E319 /* Pods.debug.xcconfig */,
+				1D745E4EA9C4B866ED8E9647 /* Pods-ManagedMappingObjectTests.release.xcconfig */,
+				E18B30383AF9249E9E5701C8 /* Pods-ManagedMappingObjectTests.debug.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +305,7 @@
 			name = ManagedMappingObjectTests;
 			productName = ManagedMappingObjectTests;
 			productReference = 17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		17B5CFCC0DEE8CC1D39F23B5 /* ManagedMappingObject */ = {
 			isa = PBXNativeTarget;
@@ -321,6 +332,7 @@
 		17B5C41FF2F8FD46DC46ABDE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0610;
 				ORGANIZATIONNAME = azu;
 			};
 			buildConfigurationList = 17B5CEA9968053386EE1A605 /* Build configuration list for PBXProject "ManagedMappingObject" */;
@@ -423,7 +435,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ManagedMappingObjectTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManagedMappingObjectTests/Pods-ManagedMappingObjectTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		66226F39BDB5484CA5FB24EE /* Copy Pods Resources */ = {
@@ -438,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -460,6 +472,7 @@
 				17B5C11B293920DE6620D535 /* UnitJSONModel.m in Sources */,
 				17B5CCBC449E67161120D6F4 /* UnitTransformer.m in Sources */,
 				17B5C8E808FF9385EA7F4785 /* PersonTransformer.m in Sources */,
+				C879014B4BD48C556A895DC5 /* MappingService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,12 +526,13 @@
 /* Begin XCBuildConfiguration section */
 		17B5C0B556A1A7DF36CD52FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */;
+			baseConfigurationReference = E18B30383AF9249E9E5701C8 /* Pods-ManagedMappingObjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManagedMappingObject.app/ManagedMappingObject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
@@ -526,13 +540,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		17B5C6E97BF3359E3AA5AB04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */;
+			baseConfigurationReference = 4F5DDB94367DED6E3E6CB32C /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
@@ -544,7 +557,7 @@
 		};
 		17B5C89E0342DEAF4C3E6ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1471B9F0DC8A4CC3A332AE7F /* Pods.xcconfig */;
+			baseConfigurationReference = 74AAE0AB6B5E15F40944E319 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
@@ -612,12 +625,13 @@
 		};
 		17B5CC242722D002A5381B18 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42BE14C0277344CA939D35F1 /* Pods-ManagedMappingObjectTests.xcconfig */;
+			baseConfigurationReference = 1D745E4EA9C4B866ED8E9647 /* Pods-ManagedMappingObjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManagedMappingObject.app/ManagedMappingObject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManagedMappingObject/ManagedMappingObject-Prefix.pch";
@@ -625,7 +639,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

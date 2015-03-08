@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "17B5C7B3C56103AAF67C8D2C"
-               BuildableName = "ManagedMappingObjectTests.octest"
+               BuildableName = "ManagedMappingObjectTests.xctest"
                BlueprintName = "ManagedMappingObjectTests"
                ReferencedContainer = "container:ManagedMappingObject.xcodeproj">
             </BuildableReference>
@@ -33,7 +32,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "17B5C7B3C56103AAF67C8D2C"
-               BuildableName = "ManagedMappingObjectTests.octest"
+               BuildableName = "ManagedMappingObjectTests.xctest"
                BlueprintName = "ManagedMappingObjectTests"
                ReferencedContainer = "container:ManagedMappingObject.xcodeproj">
             </BuildableReference>
@@ -49,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "17B5C7B3C56103AAF67C8D2C"
+            BuildableName = "ManagedMappingObjectTests.xctest"
+            BlueprintName = "ManagedMappingObjectTests"
+            ReferencedContainer = "container:ManagedMappingObject.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
