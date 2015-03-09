@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@protocol ManagedMappingProtocol
+@protocol ManagedMappingProtocol <NSObject>
 + (NSDictionary *)JSONKeyMap;
 + (NSDictionary *)JSONValueTransformerNames;
 + (NSString *)entityName;

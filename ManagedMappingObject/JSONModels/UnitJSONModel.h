@@ -6,10 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MappingService.h"
 
 
-
-@interface UnitJSONModel : NSObject <NSCoding>
+@interface UnitJSONModel : NSObject <NSCoding, MappingProtocol>
 
 @property (nonatomic, assign) double meter;
 @property (nonatomic, assign) double unixTime;

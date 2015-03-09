@@ -27,6 +27,9 @@
 }
 
 - (id)transformedValue:(id) value {
+    if (value != nil && value == [NSNull null]) {
+        return value;
+    }
     NSArray *array = value;
     NSMutableSet *mutableSet = [NSMutableSet set];
     for (NSNumber *idNumber in array) {
@@ -38,6 +41,9 @@
 }
 
 - (id)reverseTransformedValue:(id) value {
+    if (value != nil && value == [NSNull null]) {
+        return value;
+    }
     NSSet *sets = value;
     NSMutableArray *array = [NSMutableArray array];
     for (Unit *unit in sets) {
