@@ -6,9 +6,9 @@
 
 @implementation MappingService
 
-+ (void)updateManagedObject:(id<MappingProtocol>)managedObject dictionary:(NSDictionary *)dictionary {
-    NSDictionary *keyMap = [[self class] JSONKeyMap];
-    NSDictionary *valueTransformerNames = [[self class] JSONValueTransformerNames];
++ (void)updateManagedObject:(id<MappingProtocol>)object dictionary:(NSDictionary *)dictionary {
+    NSDictionary *keyMap = [object JSONKeyMap];
+    NSDictionary *valueTransformerNames = [object JSONValueTransformerNames];
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
         id dictionaryValue = dictionary[dictionaryKey];
@@ -19,9 +19,9 @@
         }
         if (dictionaryValue != nil) {
             if (dictionaryValue == [NSNull null]) {
-                [managedObject setValue:nil forKeyPath:objectKey];
+                [object setValue:nil forKeyPath:objectKey];
             } else {
-                [managedObject setValue:dictionaryValue forKeyPath:objectKey];
+                [object setValue:dictionaryValue forKeyPath:objectKey];
             }
         }
     }
@@ -29,11 +29,11 @@
 
 + (NSDictionary *)dictionaryRepresentationMappingObject:(id<MappingProtocol>)object {
     NSMutableDictionary *results = [NSMutableDictionary dictionary];
-    NSDictionary *keyMap = [[object class] JSONKeyMap];
-    NSDictionary *valueTransformerNames = [[object class] JSONValueTransformerNames];
+    NSDictionary *keyMap = [object JSONKeyMap];
+    NSDictionary *valueTransformerNames = [object JSONValueTransformerNames];
     for (NSString *objectKey in [keyMap allKeys]) {
         id dictionaryKey = keyMap[objectKey];
-        id dictionaryValue = [self valueForKeyPath:objectKey]; // support relationship by putting keyPath.
+        id dictionaryValue = [object valueForKey:objectKey]; // support relationship by putting keyPath.
         NSString *transformerName = valueTransformerNames[objectKey];
         if (transformerName) {
             NSValueTransformer *transformer = [NSValueTransformer valueTransformerForName:transformerName];

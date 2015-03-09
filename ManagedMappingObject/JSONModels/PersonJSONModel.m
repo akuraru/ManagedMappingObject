@@ -16,7 +16,7 @@ NSString *const kPersonJSONModelName = @"name";
 
 @interface PersonJSONModel ()
 
-- (id)objectOrNilForKey:(id) aKey fromDictionary:(NSDictionary *) dict;
+- (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict;
 
 @end
 
@@ -27,13 +27,33 @@ NSString *const kPersonJSONModelName = @"name";
 @synthesize units = _units;
 @synthesize name = _name;
 
+- (NSNumber *)ageNumber {
+    return @(self.age);
+}
 
-+ (PersonJSONModel *)modelObjectWithDictionary:(NSDictionary *) dict {
+- (void)setAgeNumber:(NSNumber *)age {
+    self.age = [age doubleValue];
+}
+
+- (NSDictionary *)JSONKeyMap {
+    return @{
+            @"ageNumber" : kPersonJSONModelAge,
+            @"internalBaseClassIdentifier" : kPersonJSONModelId,
+            @"units" : kPersonJSONModelUnits,
+            @"name" : kPersonJSONModelName,
+    };
+}
+
+- (NSDictionary *)JSONValueTransformerNames {
+    return @{};
+}
+
++ (PersonJSONModel *)modelObjectWithDictionary:(NSDictionary *)dict {
     PersonJSONModel *instance = [[PersonJSONModel alloc] initWithDictionary:dict];
     return instance;
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *) dict {
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
     self = [super init];
 
     // This check serves to make sure that a non-NSDictionary object
@@ -75,7 +95,8 @@ NSString *const kPersonJSONModelName = @"name";
 }
 
 #pragma mark - Helper Method
-- (id)objectOrNilForKey:(id) aKey fromDictionary:(NSDictionary *) dict {
+
+- (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict {
     id object = [dict objectForKey:aKey];
     return [object isEqual:[NSNull null]] ? nil : object;
 }
@@ -83,7 +104,7 @@ NSString *const kPersonJSONModelName = @"name";
 
 #pragma mark - NSCoding Methods
 
-- (id)initWithCoder:(NSCoder *) aDecoder {
+- (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
 
     self.age = [aDecoder decodeDoubleForKey:kPersonJSONModelAge];
@@ -93,7 +114,7 @@ NSString *const kPersonJSONModelName = @"name";
     return self;
 }
 
-- (void)encodeWithCoder:(NSCoder *) aCoder {
+- (void)encodeWithCoder:(NSCoder *)aCoder {
 
     [aCoder encodeDouble:_age forKey:kPersonJSONModelAge];
     [aCoder encodeObject:_internalBaseClassIdentifier forKey:kPersonJSONModelId];

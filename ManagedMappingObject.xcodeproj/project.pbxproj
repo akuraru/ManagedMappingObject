@@ -47,6 +47,7 @@
 		17B5CE9D8C03D8808DCAD065 /* _Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CBA082B8FC5E2191417A /* _Unit.m */; };
 		17B5CEE68C36767EC5D72FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5FFB19EB31FB8FEC1CE /* main.m */; };
 		73741C7917E164D600E42069 /* ManagedMappingObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5EB9DA17B4BBA8818C0 /* ManagedMappingObject.xcdatamodeld */; };
+		BE10AA5D1AADAF5900FC8493 /* MappingServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10AA5C1AADAF5900FC8493 /* MappingServiceTests.m */; };
 		BF1649E4600844339F22A896 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAFEAB839E34D45A1A998C5 /* libPods.a */; };
 		C879014B4BD48C556A895DC5 /* MappingService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790614E9BA2A5001D513F4 /* MappingService.m */; };
 /* End PBXBuildFile section */
@@ -66,7 +67,7 @@
 		17B5C12676EA452046A25744 /* PersonJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonJSONModel.h; sourceTree = "<group>"; };
 		17B5C15E8541EB0EE2B25EDA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		17B5C3151F13FD1674009844 /* person.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = person.json; sourceTree = "<group>"; };
-		17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManagedMappingObjectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5C38651E27A93033F0607 /* ManagedMappingObjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ManagedMappingObjectTests.octest; path = ManagedMappingObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C4745341458BB33243F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C48C1275D157879E6F52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17B5C4C65A2ADE36071946EE /* PersonTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTransformer.h; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		2901CB6740004A4E874E77B8 /* libPods-ManagedMappingObjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ManagedMappingObjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5DDB94367DED6E3E6CB32C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		74AAE0AB6B5E15F40944E319 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BE10AA5C1AADAF5900FC8493 /* MappingServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingServiceTests.m; sourceTree = "<group>"; };
 		C8790614E9BA2A5001D513F4 /* MappingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingService.m; sourceTree = "<group>"; };
 		C8790FC92DE6C9E0CF49DA46 /* MappingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingService.h; sourceTree = "<group>"; };
 		CEAFEAB839E34D45A1A998C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +243,7 @@
 			children = (
 				17B5C0BD658150DA46FEE069 /* Supporting Files */,
 				17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */,
+				BE10AA5C1AADAF5900FC8493 /* MappingServiceTests.m */,
 			);
 			path = ManagedMappingObjectTests;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE10AA5D1AADAF5900FC8493 /* MappingServiceTests.m in Sources */,
 				17B5CD803729788C5EB571FC /* ManagedMappingObjectTests.m in Sources */,
 				17B5C0D5A67D51921E37E0E9 /* ManagedMappingObject.m in Sources */,
 				17B5C8E06169E94D9DBA80F3 /* Person.m in Sources */,
