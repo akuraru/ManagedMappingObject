@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ManagedMappingObject"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "Converting NSManagedObject to NSDictionary (and back again)."
   s.homepage     = "https://github.com/PlusR/ManagedMappingObject"
 
