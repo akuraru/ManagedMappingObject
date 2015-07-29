@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ManagedMappingObject"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "Converting NSManagedObject to NSDictionary (and back again)."
   s.homepage     = "https://github.com/PlusR/ManagedMappingObject"
 
@@ -11,7 +11,16 @@ Pod::Spec.new do |s|
     :git => "https://github.com/PlusR/ManagedMappingObject.git",
     :tag => s.version.to_s
   }
-  s.source_files = 'src/**/*.{h,m}'
-  s.framework    = 'CoreData'
   s.requires_arc = true
+
+
+  s.subspec 'Core' do |a|
+    a.source_files = 'src/MappingService.{h,m}'
+  end
+  
+  s.subspec 'ManagedMappingObject' do |a|
+    a.source_files = 'src/ManagedMappingObject.{h,m}'
+    a.framework    = 'CoreData'
+    a.dependency 'ManagedMappingObject/Core'
+  end
 end

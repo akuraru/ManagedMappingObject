@@ -74,7 +74,7 @@
 		17B5C4D81902CB505EDB69D8 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
 		17B5C5FFB19EB31FB8FEC1CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C5FFDD92A8E784220DD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		17B5C6215752627A35CB2FF3 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
+		17B5C6215752627A35CB2FF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		17B5C6457AE431A682E9BA6A /* ManagedMappingObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagedMappingObjectTests.m; sourceTree = "<group>"; };
 		17B5C666DD36784BB9F8388D /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
 		17B5C7281B0F03ACFA28B245 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 				17B5CD44F32FACDD7541B5EB /* ManagedMappingObjectTests */,
 				17B5CD38AA8D2136736EFF1A /* src */,
 				17B5C9C6CA38945006F1B985 /* Podfile */,
-				17B5C6215752627A35CB2FF3 /* readme.md */,
+				17B5C6215752627A35CB2FF3 /* README.md */,
 				62DEAC1E4B429A395BDBBACC /* Pods */,
 			);
 			sourceTree = "<group>";
